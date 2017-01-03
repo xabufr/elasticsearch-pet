@@ -16,3 +16,7 @@ discovery:
 
 path:
   plugins: /usr/share/elasticsearch/plugins
+
+xpack:
+  security:
+    enabled: false
