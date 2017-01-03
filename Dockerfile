@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     curl \
  && rm -rf /var/lib/apt/lists/*
 
-ENV BOOTSTRAP_MLOCKALL=true NODE_DATA=true NODE_MASTER=true ES_JAVA_OPTS=-Djava.net.preferIPv4Stack=true
+ENV BOOTSTRAP_MLOCKALL=false NODE_DATA=true NODE_MASTER=true ES_JAVA_OPTS=-Djava.net.preferIPv4Stack=true
 
 COPY pre-stop-hook.sh /pre-stop-hook.sh
 

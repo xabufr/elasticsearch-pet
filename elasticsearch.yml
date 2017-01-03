@@ -12,10 +12,8 @@ cloud:
     namespace: ${KUBERNETES_NAMESPACE}
 
 discovery:
-  type: kubernetes
-
-path:
-  plugins: /usr/share/elasticsearch/plugins
+  zen:
+    hosts_provider: kubernetes
 
 xpack:
   security:
