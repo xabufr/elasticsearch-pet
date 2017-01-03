@@ -1,7 +1,7 @@
 FROM elasticsearch:5.1.1
 
 RUN bin/elasticsearch-plugin install -b io.fabric8:elasticsearch-cloud-kubernetes:5.1.1
-RUN bin/elasticsearch-plugin install -b x-pack:5.1.1
+RUN bin/elasticsearch-plugin install -b x-pack
 
 # pre-stop-hook.sh and dependencies
 RUN apt-get update && apt-get install -y \
