@@ -4,7 +4,7 @@ node:
   data: ${NODE_DATA}
   master: ${NODE_MASTER}
 bootstrap:
-  memory_lock: true
+  memory_lock: ${MEM_LOCK}
 network.host: 0.0.0.0
 discovery:
   zen:
