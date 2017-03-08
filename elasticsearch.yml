@@ -12,6 +12,9 @@ discovery:
       unicast:
         hosts: ${DISCOVERY_SERVICE}
     minimum_master_nodes: ${MIN_MASTERS}
+http:
+  enabled: ${HTTP_ENABLE}
+  compression: true
 xpack:
   security:
     enabled: false
