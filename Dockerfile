@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:5.2.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.5.0
 
 RUN elasticsearch-plugin install repository-s3
 
